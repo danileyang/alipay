@@ -41,3 +41,5 @@
 **如需帮助wechat**
 <br />
 <img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg" width = "200" height = "200" alt="微信二维码" align=center />
+###有兴趣来维护代码？
+希望更多的朋友参与，来完善此SDK
