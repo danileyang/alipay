@@ -40,7 +40,7 @@
         
 ###需帮助wechat
 <br />
-![Mou icon](http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg =100x100)
+<img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg?imageView/2/w/160/q/90"  align=center />
 
 ###有兴趣来维护代码？
 希望更多的朋友参与，来完善此SDK
