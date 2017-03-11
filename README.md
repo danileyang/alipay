@@ -38,8 +38,9 @@
 ##后续功能
 - 支持网站支付(支付宝即时到账产品)
         
-**如需帮助wechat**
+###需帮助wechat
 <br />
-<img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg" width = "100" height = "100" alt="微信二维码"/>
+![Mou icon](http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg =100x100)
+
 ###有兴趣来维护代码？
 希望更多的朋友参与，来完善此SDK
