@@ -1,4 +1,4 @@
-package ddalipay.config
+package com.daniel.config
 
 import java.security.interfaces.RSAPrivateKey
 

@@ -1,11 +1,11 @@
-package ddalipay.core
+package com.daniel
 
 import com.alipay.api.internal.util.AlipaySignature
+import com.config.AlipayConfig
 import org.dom4j.Document
 import org.dom4j.DocumentException
 import org.dom4j.Node
 import org.dom4j.io.SAXReader
-import ddalipay.config.AlipayConfig
 
 /**
  *

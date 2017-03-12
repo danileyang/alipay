@@ -1,4 +1,4 @@
-package ddalipay;
+package com.daniel;
 
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
@@ -6,7 +6,7 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.domain.AlipayTradeAppPayModel;
 import com.alipay.api.request.AlipayTradeAppPayRequest;
 import com.alipay.api.response.AlipayTradeAppPayResponse;
-import ddalipay.base.BaseResult;
+import com.daniel.base.BaseResult;
 
 /**
  * Created by daniel on 17/3/11.
@@ -35,7 +35,7 @@ public class DDAlipayClient {
 
     AlipayClient alipayClient;
 
-    public DDAlipayClient(String serverUrl, String appId, String privateKey, String format, String charset, String alipayPulicKey, String signType,String callBackUrl) {
+    public DDAlipayClient(String serverUrl, String appId, String privateKey, String format, String charset, String alipayPulicKey, String signType, String callBackUrl) {
         this.serverUrl = serverUrl;
         this.appId = appId;
         this.privateKey = privateKey;
@@ -77,7 +77,7 @@ public class DDAlipayClient {
         //这里和普通的接口调用不同，使用的是sdkExecute
         try {
             AlipayTradeAppPayResponse response = alipayClient.sdkExecute(request);
-            return new BaseResult<>(response.getBody());
+            return new BaseResult<String>(response.getBody());
         } catch (AlipayApiException e) {
             //TODO:LOGGER
 

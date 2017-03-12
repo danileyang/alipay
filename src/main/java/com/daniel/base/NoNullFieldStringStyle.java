@@ -1,4 +1,4 @@
-package ddalipay.base;
+package com.daniel.base;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;

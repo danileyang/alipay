@@ -1,4 +1,4 @@
-package ddalipay.base;
+package com.daniel.base;
 
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
@@ -10,8 +10,8 @@ import java.util.Map;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
-import static org.apache.commons.lang3.StringUtils.isNotBlank;
-import static org.apache.commons.lang3.StringUtils.trim;
+import static org.apache.commons.lang.StringUtils.isNotBlank;
+import static org.apache.commons.lang.StringUtils.trim;
 
 /**
  * Created by daniel on 17/3/11.

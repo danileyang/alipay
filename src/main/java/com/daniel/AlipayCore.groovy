@@ -1,9 +1,9 @@
-package ddalipay.core
+package com.daniel
 
+import com.config.AlipayConfig
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.httpclient.methods.multipart.FilePartSource
 import org.apache.commons.httpclient.methods.multipart.PartSource
-import ddalipay.config.AlipayConfig
 
 /**
  * Created by daniel on 17/3/2.
