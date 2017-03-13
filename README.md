@@ -4,11 +4,11 @@
 
 ##如何使用
 ####gradle：
-    compile 'com.github.daniel:ddalipay:0.1
+    compile 'com.daniel:atpay:0.1
 ####maven:
 	<dependency>
-            <groupId>com.github.daniel</groupId>
-            <artifactId>ddalipay</artifactId>
+            <groupId>com.daniel</groupId>
+            <artifactId>atpay</artifactId>
             <version>0.1</version>
      </dependency>
      
