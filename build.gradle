@@ -57,7 +57,7 @@ task fatJar(type: Jar) {
                 'Implementation-Version': version,
                 'Main-Class': 'com.mkyong.DateUtils'
     }
-    baseName = project.name + '-all'
+    baseName = project.name //+ '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
