@@ -4,12 +4,12 @@
 
 ##如何使用
 ####gradle：
-    compile 'com.daniel:atpay:0.1
+    compile 'com.daniel:atpay:0.1.6
 ####maven:
 	<dependency>
             <groupId>com.daniel</groupId>
             <artifactId>atpay</artifactId>
-            <version>0.1</version>
+            <version>0.1.6</version>
      </dependency>
      
 ##使用示例：
