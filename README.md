@@ -50,4 +50,4 @@
 - 支付宝PC网站支付
 
  如需帮助wechat<br>
- <img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg" width = "200" height = "200" alt="微信二维码" align=center />
+ <img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg?imageView/2/w/160/q/90" width = "200" height = "200" alt="微信二维码" align=center />
