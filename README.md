@@ -4,16 +4,17 @@
 
 ##如何使用
 ####gradle：
-    compile 'com.daniel:atpay:0.1.6
+    compile 'com.github.daniel:ddalipay:0.1.6
 ####maven:
 	<dependency>
-            <groupId>com.daniel</groupId>
+            <groupId>com.github.daniel</groupId>
             <artifactId>atpay</artifactId>
             <version>0.1.6</version>
      </dependency>
      
 ##使用示例：
 
+###支付：
 
       AlipayTradeAppPayModel model = new AlipayTradeAppPayModel();
         model.setBody("title");
@@ -34,12 +35,18 @@
         }else {
             //TODO:错误处理
         }
+###回调验签：
+	Map<String, String> map = params
+        map.remove('action')
+        map.remove('controller')
+        Boolean verify = ddAlipayClient.verify(map, "RSA", "PARNTERN", "PUBLIC_KEY", "UTF-8")
+        if (verify) {
+            //TODO:
+        } else {
+            //TODO:
+        }        
 
 ##后续功能
-- 支持网站支付(支付宝即时到账产品)
-        
-###需帮助wechat
-<img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg?imageView/2/w/160/q/90"  align=center />
-
-###有兴趣来维护代码？
-希望更多的朋友参与，来完善此SDK
+-  
+       如需帮助wechat
+<img src="http://7fvcu1.com1.z0.glb.clouddn.com/WechatIMG.jpeg" width = "200" height = "200" alt="微信二维码" align=center />

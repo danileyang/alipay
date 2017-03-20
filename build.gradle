@@ -32,7 +32,6 @@ dependencies {
     compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
     compile group: 'jaxen', name: 'jaxen', version: '1.1.1'
     compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
-    */
     compile "org.slf4j:slf4j-api:1.7.21"
     compile group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
     compile files('libs/alipay-sdk-java20161110125501.jar')
@@ -41,6 +40,7 @@ dependencies {
     compile "org.apache.commons:commons-lang3:3.0"
     // guava
     compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    */
 }
 
 // build source jar 无依赖
@@ -73,4 +73,8 @@ repositories {
 //Project dependencies
 dependencies {
     compile files('libs/alipay-sdk-java20161110125501.jar')
+    compile "org.apache.commons:commons-lang3:3.0"
+    compile "org.slf4j:slf4j-api:1.7.21"
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    compile "com.google.code.findbugs:jsr305:3.0.1"
 }

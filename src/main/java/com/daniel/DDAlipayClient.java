@@ -7,6 +7,9 @@ import com.alipay.api.domain.AlipayTradeAppPayModel;
 import com.alipay.api.request.AlipayTradeAppPayRequest;
 import com.alipay.api.response.AlipayTradeAppPayResponse;
 import com.daniel.base.BaseResult;
+import com.daniel.core.AlipayNotify;
+
+import java.util.Map;
 
 /**
  * Created by daniel on 17/3/11.
@@ -57,7 +60,7 @@ public class DDAlipayClient {
         request.setBizModel(model);
         request.setNotifyUrl("http://yourdomain/api/1.0/trade/pay/back.json");//TODO:回调地址
      */
-    BaseResult<String> buildOrderString(AlipayTradeAppPayModel model) {
+    public BaseResult<String> buildOrderString(AlipayTradeAppPayModel model) {
 
         //实例化客户端
         AlipayClient alipayClient = this.alipayClient;
@@ -82,6 +85,23 @@ public class DDAlipayClient {
             //TODO:LOGGER
 
             return BaseResult.failure(10001, "调用支付宝失败,exception:" + e.getErrMsg());
+        }
+    }
+
+    /**
+     * 验证回调 支持RSA RSA2(支付宝APP支付已支持RSA2),请根据签名方式选择不同的public key
+     *
+     * @param map
+     * @param signType
+     * @param partner
+     * @return
+     */
+    public BaseResult<Boolean> verify(Map<String, String> map, String signType, String partner, String alipayPublicKey, String charSet) {
+        Boolean valid = AlipayNotify.verify(map, signType, partner, alipayPublicKey, charSet);
+        if (valid) {
+            return new BaseResult<Boolean>(true);
+        } else {
+            return BaseResult.failure(10002, "签名错误");
         }
     }
 

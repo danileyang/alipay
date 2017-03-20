@@ -1,7 +1,7 @@
-package com.daniel
+package com.daniel.core
 
 import com.alipay.api.internal.util.AlipaySignature
-import com.config.AlipayConfig
+import com.daniel.config.AlipayConfig
 import org.dom4j.Document
 import org.dom4j.DocumentException
 import org.dom4j.Node

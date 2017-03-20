@@ -1,15 +1,15 @@
-package com.daniel.config
+package com.daniel.config;
 
-import java.security.interfaces.RSAPrivateKey
+import java.security.interfaces.RSAPrivateKey;
 
 /**
- * Created by daniel on 16/11/24.
+ * Created by daniel on 17/3/18.
  */
-class AlipayConfig {
+public class AlipayConfig {
 
     public static boolean partner_key_loaded = false;
 
-    public static String ALIPAY_APP_ID = ''
+    public static String ALIPAY_APP_ID = "";
 
     //↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
     // 合作身份者ID，以2088开头由16位纯数字组成的字符串
@@ -22,7 +22,7 @@ class AlipayConfig {
     public static RSAPrivateKey PARTNER_PRIVATE_KEY = null;
 
 
-    public static String PARTNER_PUBLIC_KEY = ""
+    public static String PARTNER_PUBLIC_KEY = "";
     // 商户的私钥
     public
     static String PRIVATE_KEY = "";
